@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+    <form method="post" action="/login">
+        <label>
+            <span>Введите логин (e-mail):</span>
+            <input
+                required
+                type="email"
+                name="login"
+                placeholder="Введите e-mail"
+        />
+        </label>
+        <label>
+            <span>Введите пароль:</span>
+            <input
+                required
+                type="password"
+                name="password"
+                placeholder="Введите пароль"
+                minlength="8"
+        />
+        </label>
+        <button type="submit">Войти</button>
+    </form>
+    <div class="registrationPrompt">
+        <span>Еще не зарегистрированы?</span>
+        <a href="reg.html">Зарегистрироваться</a>
+    </div>
+</body>
+</html>
